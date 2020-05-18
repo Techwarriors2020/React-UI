@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/React-UI/static/css/main.5f361e03.chunk.css",
-    "main.js": "/React-UI/static/js/main.f524442d.chunk.js",
-    "main.js.map": "/React-UI/static/js/main.f524442d.chunk.js.map",
-    "runtime-main.js": "/React-UI/static/js/runtime-main.af0be818.js",
-    "runtime-main.js.map": "/React-UI/static/js/runtime-main.af0be818.js.map",
-    "static/js/2.c509455a.chunk.js": "/React-UI/static/js/2.c509455a.chunk.js",
-    "static/js/2.c509455a.chunk.js.map": "/React-UI/static/js/2.c509455a.chunk.js.map",
-    "index.html": "/React-UI/index.html",
-    "precache-manifest.7470cde80850546af17b6e6fcdb4a086.js": "/React-UI/precache-manifest.7470cde80850546af17b6e6fcdb4a086.js",
-    "service-worker.js": "/React-UI/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/React-UI/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.c509455a.chunk.js.LICENSE.txt": "/React-UI/static/js/2.c509455a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/React-UI/static/media/logo.5d5d9eef.svg"
+    "main.css": "/ReactApp/static/css/main.5f361e03.chunk.css",
+    "main.js": "/ReactApp/static/js/main.1704e752.chunk.js",
+    "main.js.map": "/ReactApp/static/js/main.1704e752.chunk.js.map",
+    "runtime-main.js": "/ReactApp/static/js/runtime-main.e16aad01.js",
+    "runtime-main.js.map": "/ReactApp/static/js/runtime-main.e16aad01.js.map",
+    "static/js/2.c509455a.chunk.js": "/ReactApp/static/js/2.c509455a.chunk.js",
+    "static/js/2.c509455a.chunk.js.map": "/ReactApp/static/js/2.c509455a.chunk.js.map",
+    "index.html": "/ReactApp/index.html",
+    "precache-manifest.c2660ae39e4d1490f0219046e24d4478.js": "/ReactApp/precache-manifest.c2660ae39e4d1490f0219046e24d4478.js",
+    "service-worker.js": "/ReactApp/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/ReactApp/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c509455a.chunk.js.LICENSE.txt": "/ReactApp/static/js/2.c509455a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ReactApp/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.af0be818.js",
+    "static/js/runtime-main.e16aad01.js",
     "static/js/2.c509455a.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.f524442d.chunk.js"
+    "static/js/main.1704e752.chunk.js"
   ]
 }
