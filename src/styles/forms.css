@@ -184,3 +184,50 @@ label {
 
 .ekutumb-black-checkbox:checked + span:before {
   color: #212121 !important; }
+
+/****responsive container****/
+/* For desktop: */
+.ekutumb-col-1 {
+  width: 8.33%; }
+
+.ekutumb-col-2 {
+  width: 16.66%; }
+
+.ekutumb-col-3 {
+  width: 25%; }
+
+.ekutumb-col-4 {
+  width: 33.33%; }
+
+.ekutumb-col-5 {
+  width: 41.66%; }
+
+.ekutumb-col-6 {
+  width: 50%; }
+
+.ekutumb-col-7 {
+  width: 58.33%; }
+
+.ekutumb-col-8 {
+  width: 66.66%; }
+
+.ekutumb-col-9 {
+  width: 75%; }
+
+.ekutumb-col-10 {
+  width: 83.33%; }
+
+.ekutumb-col-11 {
+  width: 91.66%; }
+
+.ekutumb-col-12 {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="ekutumb-col-"] {
+    width: 90%;
+    margin: 0 auto; } }
+
+.ekutumb-layout {
+  margin: 0 auto; }
