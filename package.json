@@ -1,25 +1,36 @@
 {
-  "name": "emart",
+  "name": "e-mart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "gh-pages": "^2.2.0",
+    "atom-components-kutumb": "^1.0.0",
+    "kutumb-style": "^3.0.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typescript": "^3.8.3",
+    "gh-pages": "^2.2.0"
   },
-"homepage":"https://techwarriors2020.github.io/ReactApp",
+  "homepage": "https://techwarriors2020.github.io/React-UI/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-"predeploy":"npm run build",
-"deploy":"gh-pages -d build"		
+    "sass": "node-sass sass/ -o src/styles/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0"
+  },
+  "storybook": "start-storybook",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Kutumb from 'kutumb-style';
+import RegistrationModule from '../src/modules/registration/container';
 function App() {
+  console.log('kutumb css' + Kutumb);
   return (
     <div className="App">
-     my react project hosted
-    </div>
+     
+      <RegistrationModule/>
+     </div>
   );
 }
 
