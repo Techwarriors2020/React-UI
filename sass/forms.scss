@@ -1,8 +1,6 @@
-@import "colors";
-
-form  {
-  width: 100%;
-}
+@charset "UTF-8";
+form {
+  width: 100%; }
 
 input[type="text"],
 input[type="password"],
@@ -14,225 +12,238 @@ input[type="tel"],
 input[type="url"],
 select,
 textarea,
-textarea[type=text]  {
+textarea[type=text] {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   box-sizing: border-box;
   transition: all .2s ease;
   border-width: 1px;
-  border-color: $black;
+  border-color: #212121;
   border-style: solid;
-  border-radius: 2px;
+  border-radius: 2px; }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  input[type="file"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  select:focus,
+  textarea:focus,
+  textarea[type=text]:focus {
+    border-color: #212121;
+    transition: all .2s ease; }
 
-  &:focus  {
-    border-color: $black;
-    transition: all .2s ease;
-  }
-}
+input, textarea {
+  padding: .9rem 1rem .9rem 2rem; }
 
-input, textarea  {
-  padding: .9rem 1rem .9rem 2rem;
-}
-
-select  {
+select {
   background: #fff;
   padding: .9rem .5rem .9rem .5rem;
-  margin: 1.2rem 0;
-}
+  margin: 1.2rem 0; }
 
-textarea  {
+textarea {
   resize: vertical;
   min-height: 12rem;
-  margin: 0;
-}
+  margin: 0; }
 
-.ekutumb-input-field  {
-  span:before  {
-    cursor: pointer;
-    position: relative;
-    font-family: 'fontawesome';
-    top: 3rem;
-    left: .6rem;
-    color: $black;
-  }
-}
+.ekutumb-input-field span:before {
+  cursor: pointer;
+  position: relative;
+  font-family: 'fontawesome';
+  top: 3rem;
+  left: .6rem;
+  color: #212121; }
 
-.ekutumb-text-area-field  {
-  span:before  {
-    top: 1.8rem;
-  }
-}
+.ekutumb-text-area-field span:before {
+  top: 1.8rem; }
 
-.ekutumb-user-icon:before  {
-  content: '';
-}
+.ekutumb-user-icon:before {
+  content: ''; }
 
-.ekutumb-email-icon:before  {
-  content: '';
-}
+.ekutumb-email-icon:before {
+  content: ''; }
 
-.ekutumb-edit-icon:before  {
-  content: '';
-}
+.ekutumb-edit-icon:before {
+  content: ''; }
 
 .ekutumb-caret-icon:before {
-  content: '▼';
-}
+  content: '▼'; }
 
-label  {
-  cursor: pointer;
-
-  input[type="checkbox"] {
-    display: none;
-
-    + span:before  {
+label {
+  cursor: pointer; }
+  label input[type="checkbox"] {
+    display: none; }
+    label input[type="checkbox"] + span:before {
       content: '';
       font-family: 'fontawesome';
-      border: 1px solid $black;
+      border: 1px solid #212121;
       padding: .4rem .4rem;
       border-radius: 2px;
       transition: .2s;
       color: rgba(255, 255, 255, 0);
-      font-size: 16px;
-    }
-  }
-
-  input[type="checkbox"]:checked + span:before  {
+      font-size: 16px; }
+  label input[type="checkbox"]:checked + span:before {
     content: '';
     font-family: 'fontawesome';
-    border: 1px solid $black;
+    border: 1px solid #212121;
     padding: .4rem .4rem;
     border-radius: 2px;
     transition: .2s;
-    color: $black;
-    font-size: 16px;
-  }
-
-  input[type="radio"] {
-    display: none;
-
-    + span:before  {
+    color: #212121;
+    font-size: 16px; }
+  label input[type="radio"] {
+    display: none; }
+    label input[type="radio"] + span:before {
       content: '';
       font-family: 'fontawesome';
-      border: 1px solid $black;
+      border: 1px solid #212121;
       padding: .3rem .4rem;
       border-radius: 100%;
       transition: .2s;
       color: rgba(255, 255, 255, 0);
-      font-size: 14px;
-    }
-  }
-
-  input[type="radio"]:checked + span:before  {
+      font-size: 14px; }
+  label input[type="radio"]:checked + span:before {
     content: '';
     font-family: 'fontawesome';
-    border: 1px solid $black;
+    border: 1px solid #212121;
     padding: .3rem .4rem;
     border-radius: 100%;
     transition: .2s;
-    color: $black;
-    font-size: 14px;
+    color: #212121;
+    font-size: 14px; }
+
+.ekutumb-blue-input input[type="text"],
+.ekutumb-blue-input input[type="password"],
+.ekutumb-blue-input input[type="email"],
+.ekutumb-blue-input input[type="search"],
+.ekutumb-blue-input input[type="number"],
+.ekutumb-blue-input input[type="file"],
+.ekutumb-blue-input input[type="tel"],
+.ekutumb-blue-input input[type="url"],
+.ekutumb-blue-input select,
+.ekutumb-blue-input textarea,
+.ekutumb-blue-input textarea[type="text"] {
+  border-color: #146114; }
+  .ekutumb-blue-input input[type="text"]:focus,
+  .ekutumb-blue-input input[type="password"]:focus,
+  .ekutumb-blue-input input[type="email"]:focus,
+  .ekutumb-blue-input input[type="search"]:focus,
+  .ekutumb-blue-input input[type="number"]:focus,
+  .ekutumb-blue-input input[type="file"]:focus,
+  .ekutumb-blue-input input[type="tel"]:focus,
+  .ekutumb-blue-input input[type="url"]:focus,
+  .ekutumb-blue-input select:focus,
+  .ekutumb-blue-input textarea:focus,
+  .ekutumb-blue-input textarea[type="text"]:focus {
+    border-color: #12c3d2; }
+
+.ekutumb-blue-input span:before {
+  color: #146114; }
+
+.ekutumb-error-input input[type="text"],
+.ekutumb-error-input input[type="password"],
+.ekutumb-error-input input[type="email"],
+.ekutumb-error-input input[type="search"],
+.ekutumb-error-input input[type="number"],
+.ekutumb-error-input input[type="file"],
+.ekutumb-error-input input[type="tel"],
+.ekutumb-error-input input[type="url"],
+.ekutumb-error-input select,
+.ekutumb-error-input textarea,
+.ekutumb-error-input textarea[type="text"] {
+  border-color: #f44336; }
+  .ekutumb-error-input input[type="text"]:focus,
+  .ekutumb-error-input input[type="password"]:focus,
+  .ekutumb-error-input input[type="email"]:focus,
+  .ekutumb-error-input input[type="search"]:focus,
+  .ekutumb-error-input input[type="number"]:focus,
+  .ekutumb-error-input input[type="file"]:focus,
+  .ekutumb-error-input input[type="tel"]:focus,
+  .ekutumb-error-input input[type="url"]:focus,
+  .ekutumb-error-input select:focus,
+  .ekutumb-error-input textarea:focus,
+  .ekutumb-error-input textarea[type="text"]:focus {
+    border-color: #f77066; }
+
+.ekutumb-error-input span:before {
+  color: #f44336; }
+
+.ekutumb-green-checkbox + span:before {
+  border-color: #146114 !important;
+  color: rgba(255, 255, 255, 0) !important; }
+
+.ekutumb-green-checkbox:checked + span:before {
+  color: #146114 !important; }
+
+.ekutumb-black-checkbox + span:before {
+  border-color: #212121 !important;
+  color: rgba(255, 255, 255, 0) !important; }
+
+.ekutumb-black-checkbox:checked + span:before {
+  color: #212121 !important; }
+
+  /****select menu****/
+  select {
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: #860e86;
+    border: none;
+    border-bottom: 2px solid #860e86;
+    color: white;
+    appearance: none;
+    padding: 10px;
+    padding-right: 38px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
   }
-}
 
-.ekutumb-blue-input  {
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="search"],
-  input[type="number"],
-  input[type="file"],
-  input[type="tel"],
-  input[type="url"],
-  select,
-  textarea,
-  textarea[type="text"]  {
-    border-color: $green;
-
-    &:focus  {
-      border-color: $blue;
-    }
+  /* For IE <= 11 */
+  select::-ms-expand {
+    display: none; 
   }
 
-  span:before  {
-    color: $green;
+  .ekutumb-select-icon {
+    position: absolute;
+    top: 22px;
+    right: 4px;
+    width: 30px;
+    height: 36px;
+    pointer-events: none;
+    border: 2px solid #ccd0d3e7;
+    padding-left: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
-}
-
-.ekutumb-error-input  {
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="search"],
-  input[type="number"],
-  input[type="file"],
-  input[type="tel"],
-  input[type="url"],
-  select,
-  textarea,
-  textarea[type="text"]  {
-    border-color: $red;
-
-    &:focus  {
-      border-color: lighten($red, 10);
-    }
+  .ekutumb-select-icon svg.icon {
+    transition: fill 0.3s ease;
+    fill: #DCDCDC;
   }
 
-  span:before  {
-    color: $red;
+  select:hover,
+  select:focus {
+    color:#fff;
+    background-color: #860e86;
+    border-bottom-color: #DCDCDC;
   }
-}
-
-
-
-
-.ekutumb-green-checkbox  {
-  + span:before  {
-    border-color: $green !important;
-    color: rgba(255, 255, 255, 0) !important;
+  select:hover ~ .select-icon,
+  select:focus ~ .select-icon {
+    background-color:#860e86;
+    border-color:#860e86;
   }
-}
-
-.ekutumb-green-checkbox:checked + span:before  {
-  color: $green !important;
-}
-
-.ekutumb-black-checkbox  {
-  + span:before  {
-    border-color: $black !important;
-    color: rgba(255, 255, 255, 0) !important;
+  select:hover ~ .ekutumb-select-icon svg.icon,
+  select:focus ~ .ekutumb-select-icon svg.icon {
+    fill:#ccc;
   }
-}
 
-.ekutumb-black-checkbox:checked + span:before  {
-  color: $black !important;
-}
-
-/****responsive container****/
-/* For desktop: */
-.ekutumb-col-1 {width: 8.33%;}
-.ekutumb-col-2 {width: 16.66%;}
-.ekutumb-col-3 {width: 25%;}
-.ekutumb-col-4 {width: 33.33%;}
-.ekutumb-col-5 {width: 41.66%;}
-.ekutumb-col-6 {width: 50%;}
-.ekutumb-col-7 {width: 58.33%;}
-.ekutumb-col-8 {width: 66.66%;}
-.ekutumb-col-9 {width: 75%;}
-.ekutumb-col-10 {width: 83.33%;}
-.ekutumb-col-11 {width: 91.66%;}
-.ekutumb-col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="ekutumb-col-"] {
-    width: 90%;
-margin:0 auto;
-
-
+  .ekutumb-dropdown-container {
+    width:auto;
+    margin: 0 auto;
+    position: relative;
   }
-}
-.ekutumb-layout{
-margin: 0 auto;
-}

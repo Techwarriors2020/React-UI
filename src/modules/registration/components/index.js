@@ -137,9 +137,10 @@ const Registration = () => {
           includeErrorField={true}
         />
       </div>
+
       <div className="button form-field">
         <Button onClick={submitForm} className="ekutumb-btn ekutumb-purple">Sign Up</Button>
-        
+      
       </div>
     </div>
   );
