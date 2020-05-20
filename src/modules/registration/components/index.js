@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../../../stories/components/atoms/button/button";
-import Field from "../../../stories/components/atoms/field/field.tsx";
+import Field from "../../../stories/components/atoms/field/field";
+import Cards, {CardHeader, CardFooter, CardBody} from "../../../stories/components/molecules/cards/cards";
+
 // import {Button} from "atom-components-kutumb";
 import {
   mandatoryValidation,
@@ -137,7 +139,6 @@ const Registration = () => {
           includeErrorField={true}
         />
       </div>
-
       <div className="button form-field">
         <Button onClick={submitForm} className="ekutumb-btn ekutumb-purple">Sign Up</Button>
       
