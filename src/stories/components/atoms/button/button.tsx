@@ -5,13 +5,13 @@ import React from 'react';
 interface IButtonProps {
     children?: React.ReactNode;
     props?: any;
-    clicked?: any;
+    onClick?: any;
     classes ?:[];
 }
 
-const Button: React.FC<IButtonProps> = ({ clicked, children, ...props }) => {
+const Button: React.FC<IButtonProps> = ({ onClick, children, ...props }) => {
     return (
-        <button {...props} onClick={clicked}>
+        <button {...props} onClick={onClick}>
             {children}
         </button>
     );
