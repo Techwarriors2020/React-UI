@@ -1,6 +1,5 @@
 
 import React from 'react';
-import '../styles/main.css';
 import logoImage from '../assets/images/logo.png';
 interface IHeaderProps {
     children?: React.ReactNode;
