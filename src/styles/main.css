@@ -867,41 +867,40 @@ body {
   margin: 0 auto; }
 
 .ekutumb-header {
-padding: 2rem 0;
-text-align: center;
-float: left;
-background-color:purple;
-color: #fff;
-}
+  padding: 2rem 0;
+  text-align: center;
+  float: left;
+  background-color: #b81fff;
+  color: #fff; }
 
 .ekutumb-footer {
   padding: 2rem 0;
   text-align: center;
   float: left;
-  background-color:purple;
+  background-color: #b81fff;
   color: #fff;
-  }
+  bottom: 10px; }
 
-  .ekutumb-left-panel{
-    border: 1px solid #ccc; 
-    float: left;
-    padding: 10px;
-    height: 100%;
-    min-height: 300px;
-}
-
-.ekutumb-right-panel{
+.ekutumb-left-panel {
   border: 1px solid #ccc;
-    float: left;
-    min-height: 320px;
-    clear: right;
-    width: 81%;
-  }
+  float: left;
+  padding: 10px;
+  height: 100%;
+  min-height: 300px; }
 
-  .nav .ekutumb-logo {
-  background-color: transparent;
-  padding: .5rem 1rem;
-  border-radius: 5px; }
+.ekutumb-right-panel {
+  border: 1px solid #ccc;
+  float: left;
+  min-height: 320px;
+  clear: right;
+  width: 81%; }
+
+.header-logo {
+  background-image: url("../assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 14%;
+  background-position: center;
+  height: 0px; }
 
 .buttons a {
   margin-right: 1rem;
@@ -952,29 +951,6 @@ color: #fff;
   @media screen and (max-width: 600px) {
     .buttons .ekutumb-device {
       max-width: 80%; } }
-
-.buttons .ekutumb-footer {
-  display: flex;
-  justify-content: space-between;
-  text-align: center; }
-  @media screen and (max-width: 680px) {
-    .buttons .ekutumb-footer {
-      flex-wrap: wrap;
-      flex-direction: column; } }
-  .buttons .ekutumb-footer span {
-    background-color: '#ccc';
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: .4rem 1rem;
-    margin-right: 1rem; }
-  .buttons .ekutumb-footer a {
-    color: #212121; }
-    @media screen and (max-width: 680px) {
-      .buttons .ekutumb-footer a {
-        margin-bottom: 20px; } }
-  .buttons .ekutumb-footer a:visited {
-    color: #212121; }
 
 .buttons .ekutumb-flexed {
   display: flex;

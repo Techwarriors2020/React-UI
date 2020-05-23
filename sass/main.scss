@@ -52,7 +52,7 @@ margin:0 auto;
   padding: 2rem 0;
   text-align: center;
   float: left;
-  background-color:transparent;
+  background-color:$purple;
   color: #fff;
   bottom:10px;
   }
@@ -74,10 +74,12 @@ margin:0 auto;
   }
 
 
-.nav .ekutumb-logo{
-  background-color:transparent;
-  padding: .5rem 1rem;
-  border-radius: 5px;
+  .header-logo {
+    background-image: url("../../assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 14%;
+    background-position: center;
+    height: 0px;
 }
 
 .buttons {
@@ -149,32 +151,32 @@ margin:0 auto;
   }
 }
 
-.ekutumb-footer  {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  @media screen and (max-width: 680px) {
-    flex-wrap: wrap;
-      flex-direction: column;
-  }
-  span  {
-    background-color: '#ccc';
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: .4rem 1rem;
-    margin-right: 1rem;
-  }
-  a  {
-    color: $black;
-    @media screen and (max-width: 680px) {
-      margin-bottom: 20px;
-    }
-  }
-  a:visited  {
-    color: $black;
-  }
-}
+// .ekutumb-footer  {
+//   display: flex;
+//   justify-content: space-between;
+//   text-align: center;
+//   @media screen and (max-width: 680px) {
+//     flex-wrap: wrap;
+//       flex-direction: column;
+//   }
+//   span  {
+//     background-color: '#ccc';
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     padding: .4rem 1rem;
+//     margin-right: 1rem;
+//   }
+//   a  {
+//     color: $black;
+//     @media screen and (max-width: 680px) {
+//       margin-bottom: 20px;
+//     }
+//   }
+//   a:visited  {
+//     color: $black;
+//   }
+// }
 
 .ekutumb-flexed  {
   display: flex;
