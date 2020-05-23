@@ -9,7 +9,8 @@ import {
   passwordComplexityValidation,
 } from "../../../utils/validation.util";
 import { phoneNumberCountryCode } from "../../../constants/static.constants";
-
+import  Header from '../../../commonComponents/Header.component';
+import  Footer from '../../../commonComponents/Footer.component';
 const validationSchema = {
   userEmail: [mandatoryValidation, emailValidation],
   userPassword: [mandatoryValidation, passwordComplexityValidation],
@@ -141,6 +142,8 @@ const Registration = () => {
       
       </div>
     </div>
+    
+           
   );
 };
 
