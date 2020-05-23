@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "atom-components-kutumb": "^1.0.0",
+    "axios": "^0.19.2",
     "gh-pages": "^2.2.0",
     "kutumb-style": "^3.0.9",
     "node-sass": "^4.14.1",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://techwarriors2020.github.io/signup",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SET PORT=3007 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../../stories/components/atoms/button/button";
 import Field from "../../../stories/components/atoms/field/field";
+// import {Button} from "atom-components-kutumb";
 import {
   mandatoryValidation,
   emailValidation,
@@ -8,7 +9,9 @@ import {
   passwordMatchWith,
   passwordComplexityValidation,
 } from "../../../utils/validation.util";
+
 import { phoneNumberCountryCode } from "../../../constants/static.constants";
+
 const validationSchema = {
   userEmail: [mandatoryValidation, emailValidation],
   userPassword: [mandatoryValidation, passwordComplexityValidation],
@@ -20,12 +23,12 @@ const validationSchema = {
   ],
 };
 
-const Registration = () => {
+const Registration = ({registerUser, success, error}) => {
   const countryPhoneCode = phoneNumberCountryCode.IN;
   const applyValidation = (target) => {
     let isError = false;
     if (validationSchema[target.id]) {
-      return validationSchema[target.id].map((validation) => {
+      validationSchema[target.id].map((validation) => {
         if (validation.type === "passwordmatch") {
           const fieldToCompare = document.querySelector(
             "#" + validation.fieldToCompare
@@ -50,6 +53,7 @@ const Registration = () => {
         }
       });
     }
+    
     return isError;
   };
 
@@ -81,17 +85,24 @@ const Registration = () => {
   const submitForm = () => {
     const isValidationFailedArr = Object.keys(
       validationSchema
-    ).map((fieldName) =>
-      applyValidation(document.querySelector("#" + fieldName))
-    );
-    console.log("errors", isValidationFailedArr);
+    ).map((fieldName) => {
+      return applyValidation(document.querySelector("#" + fieldName))
+    });
     if (!isValidationFailedArr.includes(true)) {
-      console.log("API Call..........");
+      const payload = {
+        email: document.querySelector('#userEmail').value,
+        mobileNumber: document.querySelector('#userMobile').value,
+        password: document.querySelector('#userPassword').value,
+        confirmPassword: document.querySelector('#userConfirmPassword').value
+      };
+      registerUser(payload);
     }
   };
 
   return (
     <div className="registration-page">
+      {error && <div className="error" style={{color: 'red'}}>{error}</div>}
+      {success && <div className="success" style={{color: 'green'}}>{success.message}</div>}
       <div className="form-field">
         <Field
           id="userEmail"
@@ -137,11 +148,8 @@ const Registration = () => {
       </div>
       <div className="button form-field">
         <Button onClick={submitForm} className="ekutumb-btn ekutumb-purple">Sign Up</Button>
-      
       </div>
     </div>
-    
-           
   );
 };
 
