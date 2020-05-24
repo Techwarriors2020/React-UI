@@ -1,5 +1,8 @@
 import React from "react";
-import Kutumb from "kutumb-style";
+//will add for production
+// import Kutumb from "kutumb-style";
+//for local dev css
+import Style from './styles/main.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LayOut from "./common-components/layout.component";
 import Header from "./common-components/Header.component";
