@@ -613,7 +613,7 @@ select:focus ~ .ekutumb-select-icon svg.icon {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: .25rem;
-  min-height: 170px;
+  min-height: 130px;
   margin-bottom: 10px; }
 
 .ekutumb-card-header:first-child {

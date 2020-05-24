@@ -4,9 +4,9 @@ export const phoneNumberCountryCode = {
 
 export const landingPage ={
     cardsArr:[{card:"Favourite from States"},
-                {card:"deals of the day"}, 
+                {card:"Deals of the day"}, 
                 {card:"Game Quiz"}, 
-                {card:"kids Mandali"}]
+                {card:"Kids Mandali"}]
 }
 
 export const registerPage = {
