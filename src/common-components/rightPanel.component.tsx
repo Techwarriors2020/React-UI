@@ -1,14 +1,15 @@
 
 import React from 'react';
-interface ILeftProps {
+interface IRightProps {
     children?: React.ReactNode;
     props?: any;
+    className ? : string;
    
 }
 
-const Menu: React.FC<ILeftProps> = ({ children, ...props }) => {
+const Menu: React.FC<IRightProps> = ({ children, ...props }) => {
     return (
-        <div className="ekutumb-left-panel ekutumb-col-2" {...props} >
+        <div className='ekutumb-col-9'{...props} >
             {children}
                  </div>
     );

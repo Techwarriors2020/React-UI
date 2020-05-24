@@ -9,7 +9,7 @@
     "atom-components-kutumb": "^1.0.0",
     "axios": "^0.19.2",
     "gh-pages": "^2.2.0",
-    "kutumb-style": "^3.0.9",
+    "kutumb-style": "^3.4.10",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
