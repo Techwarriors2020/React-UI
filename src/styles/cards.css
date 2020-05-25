@@ -9,7 +9,9 @@
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem; }
+  border-radius: .25rem;
+  min-height: 130px;
+  margin-bottom: 10px; }
 
 .ekutumb-card-header:first-child {
   border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0; }
@@ -46,7 +48,7 @@
   color: #fff; }
 
 .ekutumb-bg-purple {
-  background-color: #b81fff;
+  background-color: #860e86;
   color: #fff; }
 
 .ekutumb-bg-blue {

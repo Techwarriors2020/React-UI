@@ -1,9 +1,12 @@
 import React from "react";
-import Kutumb from "kutumb-style";
+//will add for production
+// import Kutumb from "kutumb-style";
+//for local dev css
+import Style from './styles/main.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import LayOut from "../src/commonComponents/layout.component";
-import Header from "./commonComponents/Header.component";
-import Footer from "./commonComponents/Footer.component";
+import LayOut from "./common-components/layout.component";
+import Header from "./common-components/Header.component";
+import Footer from "./common-components/Footer.component";
 import RegistrationModule from "../src/modules/registration/container";
 import LoginModule from "../src/modules/login/container";
 import LandingPage from "../src/modules/landingpage/container";
