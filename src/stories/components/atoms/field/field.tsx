@@ -1,5 +1,5 @@
 import * as React from "react";
-type Editor = "textbox" | "multilinetextbox" | "dropdown";
+type Editor = "textbox" | "email" | "password" | "multilinetextbox" | "dropdown";
 export interface IFieldProps {
   id: string;
   label?: string;

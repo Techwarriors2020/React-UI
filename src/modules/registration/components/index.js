@@ -147,7 +147,7 @@ const Registration = ({registerUser, success, error}) => {
         />
       </div>
       <div className="button form-field">
-        <Button onClick={submitForm} className="ekutumb-btn ekutumb-purple">Sign Up</Button>
+        <Button onClick={submitForm} classes="ekutumb-btn ekutumb-purple">Sign Up</Button>
       </div>
     </div>
   );

@@ -6,12 +6,12 @@ interface IButtonProps {
     children?: React.ReactNode;
     props?: any;
     onClick?: any;
-    classes ?:[];
+    classes ?: string;
 }
 
-const Button: React.FC<IButtonProps> = ({ onClick, children, ...props }) => {
+const Button: React.FC<IButtonProps> = ({ onClick, children, classes, ...props }) => {
     return (
-        <button {...props} onClick={onClick}>
+        <button {...props} onClick={onClick} className={classes}>
             {children}
         </button>
     );
