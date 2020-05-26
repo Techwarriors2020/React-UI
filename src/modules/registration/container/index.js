@@ -18,8 +18,7 @@ const Registration = () => {
         }
       })
       .catch((error) => {
-        // console.log("Error", error);
-        setError(error.data.message);
+        setError(error?.response?.data?.message);
       });
   };
 
