@@ -1,36 +1,21 @@
 {
-  "name": "e-mart",
+  "name": "ekutumb",
   "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@types/react-redux": "^7.1.9",
-    "@types/react-router-dom": "^5.1.5",
-    "atom-components-kutumb": "^1.0.0",
-    "axios": "^0.19.2",
-    "kutumb-style": "^3.4.10",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "typescript": "^3.8.3"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sass": "node-sass sass/ -o src/styles/"
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@storybook/react": "^5.3.18",
-    "babel-loader": "^8.1.0"
-  },
-  "storybook": "start-storybook",
   "eslintConfig": {
     "extends": "react-app"
   },
