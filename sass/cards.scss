@@ -1,0 +1,70 @@
+@import './colors.scss';
+
+.ekutumb-card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    min-height: 130px;
+    margin-bottom: 10px;
+}
+
+.ekutumb-card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.ekutumb-card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.ekutumb-card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.ekutumb-card-header{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.ekutumb-card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+
+.ekutumb-bg-danger{
+    background-color:$danger;
+    color:$white;
+}
+
+.ekutumb-bg-success{
+    background-color:$success;
+    color:$white;
+}
+
+.ekutumb-bg-warning{
+    background-color:$warning;
+    color:$white;
+}
+
+.ekutumb-bg-purple{
+    background-color:$purple;
+    color:$white;
+}
+
+.ekutumb-bg-blue{
+    background-color:$blue;
+    color:$white;
+}
