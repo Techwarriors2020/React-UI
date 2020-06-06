@@ -1,16 +1,14 @@
-import React, {useState, useReducer, useContext} from 'react';
+import React, {useState, useReducer} from 'react';
 import LoginComp from '../components';
 import UserLoginService from "../../../services/api/login-api.service";
-import { BrowserRouter as Router,Redirect, Switch, Route, Link } from "react-router-dom";
-import LandingPage from "../../landingpage/container";
-import { connect } from 'react-redux';
+import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import reducer, {initialState} from '../../../reducer';
 
 interface LoginPayload {
   email?: string;
   password?: string;
 }
-const Login = ({...props}) => {
+const Login = () => {
  
     const [error, setError] = useState("");
     const [state, dispatch] = useReducer(reducer, initialState);
