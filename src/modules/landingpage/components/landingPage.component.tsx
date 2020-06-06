@@ -15,6 +15,8 @@ const LandingPage: React.FC<ILandingPageProps> = ({ children, ...props }) => {
     return (
         <div {...props} >
             <div className="ekutumb-col-12">
+                <p><i className="fas fa-angle-right"></i>
+Download SVGPerfect for when you want to use just one icon as a vector on the desktop or in your own icon workflow.</p>
             <LeftPanel className='ekutumb-left-panel ekutumb-col-3'>
            {/* later we can add scroll if need */}
             {constants.landingPage.cardsArr.map(function(item, i){

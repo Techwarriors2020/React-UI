@@ -6,6 +6,7 @@ import {
   emailValidation,
 } from "../../../utils/validation.util";
 
+
 interface ILoginProps {
   children?: React.ReactNode;
   error?: String;
@@ -13,6 +14,9 @@ interface ILoginProps {
 }
 
 const Login: React.FC<ILoginProps> = ({ error, login, children }) => {
+  
+
+
   const validationSchema: any = {
     userEmail: [mandatoryValidation, emailValidation],
     userPassword: [mandatoryValidation],
@@ -20,7 +24,7 @@ const Login: React.FC<ILoginProps> = ({ error, login, children }) => {
   const applyValidation = (target: any) => {
     let isError = false;
     if (validationSchema[target.id]) {
-      validationSchema[target.id].map((validation: any) => {
+      return validationSchema[target.id].map((validation: any) => {
         if (validation.type === "passwordmatch") {
           const fieldToCompare: any = document.querySelector(
             "#" + validation.fieldToCompare
@@ -52,6 +56,8 @@ const Login: React.FC<ILoginProps> = ({ error, login, children }) => {
     applyValidation(e.target);
   };
   const submitForm = () => {
+    //dispatch({type:'AUTH_BEGIN'});
+
     const isValidationFailedArr = Object.keys(validationSchema).map(
       (fieldName) => {
         return applyValidation(document.querySelector("#" + fieldName));
@@ -63,7 +69,9 @@ const Login: React.FC<ILoginProps> = ({ error, login, children }) => {
         password: (document.querySelector("#userPassword") as HTMLInputElement)
           .value,
       };
+      
       login && login(payload);
+      
     }
   };
   return (
@@ -95,6 +103,7 @@ const Login: React.FC<ILoginProps> = ({ error, login, children }) => {
         />
       </div>
       <div className="button form-field">
+      {/* <button onClick={()=>dispatch({type:''})}>click</button> */}
         <Button onClick={submitForm} classes="ekutumb-btn ekutumb-purple">
           Sign In
         </Button>
