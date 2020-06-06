@@ -19,7 +19,6 @@
     "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },
-  "homepage": "https://techwarriors2020.github.io/React-UI",
   "scripts": {
     "start": "SET PORT=3007 && react-scripts start",
     "build": "react-scripts build",

@@ -12,7 +12,6 @@ import LandingPage from "../src/modules/landingpage/container";
 import reducer, {initialState} from './reducer';
 import './styles/main.css';
 
-
 function App({...props}) {
   // console.log('kutumb css' + Kutumb);
   props.isUserAuthenticated=false;
