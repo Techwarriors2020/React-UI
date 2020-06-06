@@ -10,7 +10,6 @@
     "@types/react-router-dom": "^5.1.5",
     "atom-components-kutumb": "^1.0.0",
     "axios": "^0.19.2",
-    "gh-pages": "^2.2.0",
     "kutumb-style": "^3.4.10",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -20,15 +19,14 @@
     "react-scripts": "3.4.1",
     "typescript": "^3.8.3"
   },
-  "homepage": "https://techwarriors2020.github.io/signup",
+  "homepage": "https://techwarriors2020.github.io/React-UI",
   "scripts": {
     "start": "SET PORT=3007 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass sass/ -o src/styles/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "sass": "node-sass sass/ -o src/styles/"
+   
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

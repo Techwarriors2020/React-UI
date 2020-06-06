@@ -15,10 +15,11 @@ import './styles/main.css';
 
 function App({...props}) {
   // console.log('kutumb css' + Kutumb);
- 
+  props.isUserAuthenticated=false;
   const Context = createContext(initialState);
   const [state, dispatch] = useReducer(reducer, initialState);
   const data=useContext(Context);
+  console.log(data);
   
   return (
     <Context.Provider value={[state, dispatch]}>
@@ -35,11 +36,11 @@ function App({...props}) {
           </Route>
           <Route path="/login">
          
-            <LoginModule />
+            <LoginModule isAuthenticated={data} />
 
           </Route>
           <Route path="/landingpage">
-         <LandingPage />
+          <LandingPage />
             
           </Route>
         </Switch>
