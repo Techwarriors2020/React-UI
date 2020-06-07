@@ -9,6 +9,7 @@ import Footer from "./common-components/Footer.component";
 import RegistrationModule from "../src/modules/registration/container";
 import LoginModule from "../src/modules/login/container";
 import LandingPage from "../src/modules/landingpage/container";
+import GamePage from "../src/modules/gamePage";
 import reducer, {initialState} from './reducer';
 import './styles/main.css';
 
@@ -34,13 +35,13 @@ function App({...props}) {
             <RegistrationModule />
           </Route>
           <Route path="/login">
-         
-            <LoginModule isAuthenticated={data} />
-
-          </Route>
+           <LoginModule isAuthenticated={data} />
+           </Route>
           <Route path="/landingpage">
           <LandingPage />
-            
+          </Route>
+          <Route path="/gamePage">
+          <GamePage />
           </Route>
         </Switch>
       </Router>
